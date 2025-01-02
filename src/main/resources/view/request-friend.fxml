@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.RequestFriendController" style="-fx-background-color: #37817e;">
+    <children>
+        <SplitPane dividerPositions="0.49916107382550334" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <TableView fx:id="tableViewUser" prefHeight="195.0" prefWidth="600.0">
+                            <columns>
+                                <TableColumn fx:id="tableColumnUsername" prefWidth="200.0" text="Username" style="-fx-text-fill: #001761;" />
+                                <TableColumn fx:id="tableColumnNume" minWidth="0.0" prefWidth="200.0" text="Nume" style="-fx-text-fill: #001761;" />
+                                <TableColumn fx:id="tableColumnPrenume" prefWidth="200.0" text="Prenume" style="-fx-text-fill: #001761;" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="285.0" prefWidth="597.0">
+                    <children>
+                        <Button fx:id="buttonAdd" layoutX="250.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleAdd" text="Adauga prieten" style="-fx-background-color: #225ae6; -fx-text-fill: white;" />
+                        <TextField fx:id="lblPgUser" layoutX="232.0" layoutY="64.0" text="Număr useri" style="-fx-background-color: #ffffff; -fx-border-color: #225ae6;" />
+                        <Button fx:id="nextButtonUser" layoutX="327.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleNextUser" text="Next" style="-fx-background-color: #225ae6; -fx-text-fill: white;" />
+                        <Button fx:id="prevButtonUser" layoutX="239.0" layoutY="14.0" mnemonicParsing="false" onAction="#handlePrevUser" text="Prev" style="-fx-background-color: #225ae6; -fx-text-fill: white;" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

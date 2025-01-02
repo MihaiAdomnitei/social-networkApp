@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.EditUserController" style="-fx-background-color: #37817e;">
+    <SplitPane dividerPositions="0.843959731543624" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="291.0" prefWidth="597.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="24.0" prefHeight="25.0" prefWidth="155.0" text="Actualizeaza profilul"
+                   style="-fx-text-fill: #001761; -fx-font-size: 16px; -fx-font-weight: bold;" />
+            <Label layoutX="76.0" layoutY="83.0" prefHeight="25.0" prefWidth="69.0" text="Username"
+                   style="-fx-text-fill: #001761;" />
+            <Label layoutX="76.0" layoutY="134.0" text="Prenume"
+                   style="-fx-text-fill: #001761;" />
+            <Label layoutX="76.0" layoutY="184.0" text="Nume"
+                   style="-fx-text-fill: #001761;" />
+            <TextField fx:id="textFieldUsername" layoutX="158.0" layoutY="83.0" prefHeight="25.0" prefWidth="341.0"
+                       style="-fx-background-color: #ffffff; -fx-border-color: #d77f3d;" />
+            <TextField fx:id="textFieldPrenume" layoutX="158.0" layoutY="130.0" prefHeight="25.0" prefWidth="341.0"
+                       style="-fx-background-color: #ffffff; -fx-border-color: #d77f3d;" />
+            <TextField fx:id="textFieldNume" layoutX="158.0" layoutY="180.0" prefHeight="25.0" prefWidth="341.0"
+                       style="-fx-background-color: #ffffff; -fx-border-color: #d77f3d;" />
+        </AnchorPane>
+
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="289.0">
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="600.0">
+                <Button fx:id="buttonSave"
+                        mnemonicParsing="false"
+                        onAction="#handleSave"
+                        text="Update"
+                        style="-fx-background-color: #225ae6; -fx-text-fill: #ffffff; -fx-font-size: 14px; -fx-padding: 5 15 5 15;">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="buttonCancel"
+                        mnemonicParsing="false"
+                        onAction="#handleCancel"
+                        text="Cancel"
+                        style="-fx-background-color: #d77f3d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 5 15 5 15;">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </HBox.margin>
+                </Button>
+            </HBox>
+        </AnchorPane>
+
+    </SplitPane>
+</AnchorPane>

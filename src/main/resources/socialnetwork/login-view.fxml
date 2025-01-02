@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: #37817e;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.LoginController">
+   <children>
+      <Label text="Welcome !" textAlignment="CENTER" style="-fx-text-fill: #001761; -fx-font-size: 28px; -fx-font-weight: bold;" />
+      <VBox alignment="CENTER" spacing="15.0">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label text="Username:" style="-fx-text-fill: #001761; -fx-font-size: 16px;" />
+                  <TextField fx:id="textUsername" prefWidth="200.0"/>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label text="Password:" style="-fx-text-fill: #001761; -fx-font-size: 16px;" />
+                  <PasswordField fx:id="textPassword" prefWidth="200.0"/>
+               </children>
+            </HBox>
+            <Button fx:id="bttnLogin"
+                    text="Login"
+                    onAction="#handleLogin"
+                    style="-fx-background-color: #225ae6; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 5 15 5 15;" />
+            <Hyperlink fx:id="linkNewAcc"
+                       text="Sign up"
+                       onAction="#handleNewAcc"
+                       style="-fx-text-fill: #002da0;" />
+         </children>
+      </VBox>
+   </children>
+</VBox>
