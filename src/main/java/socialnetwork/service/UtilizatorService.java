@@ -101,8 +101,8 @@ public class UtilizatorService implements Observable {
         Long idUser = searchID(username);
         Optional<Utilizator> user = repo.findOne(idUser);
         if (user.isPresent()) {
-            String hashedPassword = hashPassword(password);
-            return Objects.equals(user.get().getPassword(), hashedPassword);
+//            String hashedPassword = hashPassword(password);
+            return Objects.equals(user.get().getPassword(), password);
         } else {
             throw new ValidationException("Utilizatorul nu exista");
         }
