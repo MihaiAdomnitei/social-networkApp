@@ -1,6 +1,6 @@
-Social Network Application
+# Social Network Application
 This project is a social network application built using Java and JavaFX. It allows users to register, log in, manage friendships, and send friend requests. The application features a graphical user interface (GUI) for user interactions and utilizes a PostgreSQL database for data storage.  
-#Features:
+# Features:
 
 ->User registration and login
 
@@ -12,13 +12,13 @@ This project is a social network application built using Java and JavaFX. It all
 
 ->Chat functionality between friends
 
-#Technologies Used:
+# Technologies Used:
 
 ->Java: The primary programming language used for the application logic.
 
 ->JavaFX: Used for building the graphical user interface.
 
-->Gradle: Build automation tool used for managing dependencies and building the project.\
+->Gradle: Build automation tool used for managing dependencies and building the project.
 
 ->PostgreSQL: Relational database used for storing user data and relationships.
 
