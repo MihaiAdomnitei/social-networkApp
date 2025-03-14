@@ -1,4 +1,4 @@
-#Social Network Application
+Social Network Application
 This project is a social network application built using Java and JavaFX. It allows users to register, log in, manage friendships, and send friend requests. The application features a graphical user interface (GUI) for user interactions and utilizes a PostgreSQL database for data storage.  
 #Features:
 
